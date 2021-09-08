@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="ePI-Ng-xkS">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Cars-->
+        <scene sceneID="HBG-1Q-D2B">
+            <objects>
+                <tableViewController id="ePI-Ng-xkS" customClass="CarsTableviewController" customModule="SevenPeaks" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="2Ad-mU-2zk">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="CarCell" rowHeight="407" id="xlU-qy-rD2" customClass="CarCell" customModule="SevenPeaks" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="24.5" width="414" height="407"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="xlU-qy-rD2" id="O3q-19-abZ">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="407"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="4Fs-Pp-cmq">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="407"/>
+                                        </imageView>
+                                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="18" translatesAutoresizingMaskIntoConstraints="NO" id="eSU-3K-8e3">
+                                            <rect key="frame" x="16" y="260" width="382" height="131"/>
+                                            <subviews>
+                                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="6" translatesAutoresizingMaskIntoConstraints="NO" id="NjG-nU-ItB">
+                                                    <rect key="frame" x="0.0" y="0.0" width="382" height="79.5"/>
+                                                    <subviews>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Q7 - Greatness starts, when you don't stop." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DhT-pg-dGn">
+                                                            <rect key="frame" x="0.0" y="0.0" width="382" height="57.5"/>
+                                                            <fontDescription key="fontDescription" type="system" weight="medium" pointSize="24"/>
+                                                            <color key="textColor" name="appWhite"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="29/03/2020" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3b4-NY-j0T">
+                                                            <rect key="frame" x="0.0" y="63.5" width="382" height="16"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                                            <color key="textColor" name="appWhite"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                </stackView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="The Audi Q7 is the result of an ambitious idea: never cease to improve." textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TgB-At-1sd">
+                                                    <rect key="frame" x="0.0" y="97.5" width="382" height="33.5"/>
+                                                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="14"/>
+                                                    <color key="textColor" name="appWhite"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </stackView>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="eSU-3K-8e3" firstAttribute="leading" secondItem="O3q-19-abZ" secondAttribute="leading" constant="16" id="8c1-07-esC"/>
+                                        <constraint firstItem="4Fs-Pp-cmq" firstAttribute="top" secondItem="O3q-19-abZ" secondAttribute="top" id="FC9-gp-QKk"/>
+                                        <constraint firstAttribute="bottom" secondItem="eSU-3K-8e3" secondAttribute="bottom" constant="16" id="Nko-8s-vgG"/>
+                                        <constraint firstAttribute="trailing" secondItem="eSU-3K-8e3" secondAttribute="trailing" constant="16" id="WwZ-ZZ-2QS"/>
+                                        <constraint firstItem="4Fs-Pp-cmq" firstAttribute="leading" secondItem="O3q-19-abZ" secondAttribute="leading" id="cwZ-kd-bRy"/>
+                                        <constraint firstAttribute="trailing" secondItem="4Fs-Pp-cmq" secondAttribute="trailing" id="rho-YE-KRF"/>
+                                        <constraint firstAttribute="bottom" secondItem="4Fs-Pp-cmq" secondAttribute="bottom" id="zqu-tE-U3S"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="imgCar" destination="4Fs-Pp-cmq" id="cr2-Y6-A78"/>
+                                    <outlet property="lblDate" destination="3b4-NY-j0T" id="4o0-gA-xfS"/>
+                                    <outlet property="lblSmallDescription" destination="TgB-At-1sd" id="IZS-bQ-VqT"/>
+                                    <outlet property="lblTitle" destination="DhT-pg-dGn" id="3dA-di-r7T"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="ePI-Ng-xkS" id="D2M-yG-GAc"/>
+                            <outlet property="delegate" destination="ePI-Ng-xkS" id="sl3-05-5L9"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Cars" id="fFe-oT-SW6"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hVB-U8-ETU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="214" y="-130"/>
+        </scene>
+    </scenes>
+    <resources>
+        <namedColor name="appWhite">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
